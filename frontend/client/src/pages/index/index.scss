@@ -1,0 +1,8 @@
+@use '../../styles/tokens' as tokens;
+.home__masthead { display: flex; align-items: center; justify-content: space-between; }
+.home__brand { color: tokens.$primary-dark; font-size: 30px; font-weight: 800; }
+.home__actions { display: flex; flex-direction: column; gap: 20px; }
+.home__info { display: flex; flex-direction: column; gap: 10px; }
+.home__info-title { color: tokens.$primary-dark; font-size: 27px; font-weight: 800; }
+.home__info-text { color: tokens.$ink-muted; font-size: 23px; line-height: 1.6; }
+.home__footnote { text-align: center; color: tokens.$ink-muted; font-size: 21px; }

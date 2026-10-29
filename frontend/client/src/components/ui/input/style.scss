@@ -1,0 +1,6 @@
+@use '../../../styles/tokens' as tokens;
+.mj-input-field { display: flex; flex-direction: column; gap: 12px; }
+.mj-input-field__label { font-size: 24px; font-weight: 700; color: tokens.$ink; }
+.mj-input-field__control { background: tokens.$card; border: 2px solid tokens.$stroke; border-radius: tokens.$radius-md; height: 88px; padding: 0 22px; font-size: 27px; color: tokens.$ink; }
+.mj-input-field__control--error { border-color: tokens.$danger; }
+.mj-input-field__error { color: tokens.$danger; font-size: 22px; }

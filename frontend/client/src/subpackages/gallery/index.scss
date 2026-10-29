@@ -1,0 +1,5 @@
+@use '../../styles/tokens' as tokens;
+.gallery__title { display: block; font-size: 29px; font-weight: 800; margin-bottom: 22px; }
+.gallery__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.gallery__row { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
+.gallery__caption { display: block; margin-top: 18px; color: tokens.$ink-muted; font-size: 23px; }

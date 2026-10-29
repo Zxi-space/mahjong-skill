@@ -1,0 +1,23 @@
+packages:
+  - 'frontend/client'
+  - 'frontend/admin'
+  - 'frontend/portal'
+
+# Taro 4.3.1 Webpack H5 的 React Fast Refresh 隐式依赖补全。
+# pnpm 隔离式 node_modules 不会保证 Taro 插件读取到 Client 的顶层依赖。
+packageExtensions:
+  '@tarojs/plugin-framework-react@4.3.1':
+    dependencies:
+      '@pmmmwh/react-refresh-webpack-plugin': '0.5.17'
+      'react-refresh': '0.14.2'
+
+# pnpm 11/12: allow reviewed native/build-tool postinstall scripts only.
+# core-js-pure postinstall is not required for package execution.
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  '@tarojs/binding': true
+  '@tarojs/cli': true
+  core-js: false
+  'core-js-pure': false
+  esbuild: true

@@ -1,0 +1,7 @@
+@use '../../../styles/tokens' as tokens;
+.mj-badge { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; font-size: 20px; padding: 5px 14px; line-height: 1.4; font-weight: 600; }
+.mj-badge--neutral { color: tokens.$ink-muted; background: #f0f2ea; }
+.mj-badge--primary { color: tokens.$primary-dark; background: tokens.$mint; }
+.mj-badge--success { color: tokens.$success; background: #e4f6e9; }
+.mj-badge--warning { color: #9d6725; background: #fff1d7; }
+.mj-badge--danger { color: tokens.$danger; background: #ffebea; }

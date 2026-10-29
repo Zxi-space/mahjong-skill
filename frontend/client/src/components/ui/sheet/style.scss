@@ -1,0 +1,7 @@
+@use '../../../styles/tokens' as tokens;
+.mj-sheet { padding: 16px 30px calc(40px + env(safe-area-inset-bottom)); background: tokens.$card; border-radius: 28px 28px 0 0; }
+.mj-sheet__handle { background: tokens.$stroke; width: 80px; height: 8px; border-radius: 20px; margin: 0 auto 25px; }
+.mj-sheet__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.mj-sheet__title { font-size: 32px; font-weight: 800; }
+.mj-sheet__close { font-size: 24px; color: tokens.$primary; }
+.mj-sheet__body { font-size: 26px; line-height: 1.6; }

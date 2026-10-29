@@ -1,0 +1,11 @@
+{
+  "miniprogramRoot": "dist/weapp/",
+  "projectname": "mahjong-skill",
+  "description": "雀变跨端用户端",
+  "appid": "wx629eec0820d105c8",
+  "setting": {
+    "es6": true,
+    "postcss": true,
+    "minified": true
+  }
+}

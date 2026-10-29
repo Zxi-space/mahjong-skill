@@ -1,0 +1,6 @@
+@use '../../../styles/tokens' as tokens;
+.mj-dialog { background: tokens.$card; padding: 40px 30px 32px; width: 590px; max-width: 88vw; display: flex; flex-direction: column; gap: 20px; }
+.mj-dialog__title { font-size: 34px; font-weight: 800; color: tokens.$ink; text-align: center; }
+.mj-dialog__description { font-size: 25px; color: tokens.$ink-muted; line-height: 1.65; text-align: center; }
+.mj-dialog__actions { display: flex; gap: 14px; margin-top: 12px; }
+.mj-dialog__actions > view, .mj-dialog__actions > button { flex: 1; }

@@ -1,0 +1,12 @@
+import Link from 'next/link'
+import { ArrowUpRight, Layers3, UsersRound, Smartphone, Sparkles, Check, BookOpen } from 'lucide-react'
+const highlights = [
+  {icon: Layers3, title: '技能卡牌', desc: '基于效果模板创建，玩法轻松扩展。'},
+  {icon: UsersRound, title: '好友同局', desc: '扫码加入房间，同步技能动作。'},
+  {icon: Smartphone, title: '多端使用', desc: '微信小程序与 H5，打开就能使用。'},
+]
+export default function HomePage() {
+  return <div className='page'><header className='header container'><div className='brand'><span className='brand-icon'>雀</span><div><strong>雀变</strong><small>MAHJONG SKILL</small></div></div><nav><Link href='#features'>玩法特色</Link><Link href='#about'>关于雀变</Link></nav><a className='header-link' href={process.env.NEXT_PUBLIC_CLIENT_H5_URL || 'http://localhost:5174'}>立即体验 <ArrowUpRight size={16}/></a></header>
+  <main><section className='hero container'><div className='hero-copy'><div className='eyebrow'><Sparkles size={16}/> MAHJONG, WITH A TWIST</div><h1>好牌局，<br/><em>玩出新花样。</em></h1><p>雀变，让线下麻将多一点惊喜。用电子技能牌开启趣味互动，把每场牌局变成更有趣的相聚。</p><div className='hero-actions'><a className='button primary' href={process.env.NEXT_PUBLIC_CLIENT_H5_URL || 'http://localhost:5174'}>开始体验 <ArrowUpRight size={18}/></a><a className='button secondary' href='#features'><BookOpen size={18}/>了解玩法</a></div><div className='hero-meta'><Check size={17}/> 无需下载独立 App · 微信小程序 / H5</div></div><div className='tile-visual' aria-label='品牌插画'><div className='halo halo-one'/><div className='halo halo-two'/><div className='mahjong-tile'><span className='tile-character'>中</span><span className='tile-star'>✦</span></div><div className='little-tile'>發</div><div className='bubble'>雀叽正在准备新技能 ✨</div></div></section>
+  <section className='features' id='features'><div className='container'><div className='section-title'><span className='eyebrow'>WHY MAHJONG SKILL</span><h2>小小技能，带来大大乐趣</h2><p>不是另一款麻将游戏，而是让你在线下牌局中使用技能牌的电子工具。</p></div><div className='cards'>{highlights.map(({icon:Icon,title,desc}) => <article className='feature-card' key={title}><div className='feature-icon'><Icon size={25}/></div><h3>{title}</h3><p>{desc}</p></article>)}</div></div></section><section className='about container' id='about'><div><span className='eyebrow'>ABOUT THE PROJECT</span><h2>让线下的快乐，<br/>延续到每次相聚。</h2></div><p>门户端负责品牌、玩法与公开内容；真正的房间和技能互动发生在雀变用户端。当前为架构初始化展示页面，尚未对接真实技能数据。</p></section></main><footer className='footer container'>© 2026 雀变 · Mahjong Skill <span>Made for better game nights.</span></footer></div>
+}

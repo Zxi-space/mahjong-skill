@@ -1,0 +1,8 @@
+/* Admin 局部视觉变量：与 Client 同品牌，但不共用运行时组件或共享包。 */
+:root {
+  --mj-brand-primary: #328664;
+  --mj-brand-deep: #294739;
+  --mj-brand-bg: #f8faf7;
+  --mj-brand-border: #e0eadc;
+  --mj-brand-muted: #728579;
+}

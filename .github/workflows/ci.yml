@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python · scripts / backend
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - name: Check engineering scripts
+        run: python -m unittest discover -s scripts/tests -p 'test_*.py'
+      - name: Backend tests
+        run: python scripts/mahjong_skill.py test:backend
+      - name: Backend lint
+        run: python scripts/mahjong_skill.py check:backend
+
+  frontend:
+    name: Frontend · build / test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: pnpm
+      - name: Require committed lockfile
+        run: test -f pnpm-lock.yaml || (echo "::error::请在本地运行 pnpm install 并提交 pnpm-lock.yaml" && exit 1)
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Client React alignment
+        run: pnpm --filter @mahjong-skill/client doctor:react
+      - name: Client H5 build
+        run: pnpm --filter @mahjong-skill/client build:h5
+      - name: Client WeChat mini-program build
+        run: pnpm --filter @mahjong-skill/client build:weapp
+      - name: Admin build
+        run: pnpm --filter @mahjong-skill/admin build
+      - name: Portal build
+        run: pnpm --filter @mahjong-skill/portal build
+      - name: Frontend unit tests
+        run: |
+          pnpm --filter @mahjong-skill/client test
+          pnpm --filter @mahjong-skill/admin test
+          pnpm --filter @mahjong-skill/portal test

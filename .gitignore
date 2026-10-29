@@ -1,0 +1,84 @@
+# Mahjong Skill · Monorepo
+# Dependencies / package manager artifacts
+node_modules/
+.pnpm-store/
+.pnp.*
+
+# Frontend build outputs and tooling caches
+**/dist/
+**/build/
+**/.next/
+**/.nuxt/
+**/.taro/
+**/.cache/
+**/.turbo/
+**/.swc/
+**/.webpack/
+**/coverage/
+*.tsbuildinfo
+frontend/portal/next-env.d.ts
+
+# Python build outputs and virtual environments
+**/.venv/
+**/venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+htmlcov/
+.coverage
+.coverage.*
+
+# Environment files; deliberately keep safe examples
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local runtime and generated artifacts
+.mahjong-skill/
+artifacts/
+*.log
+*.pid
+*.tmp
+
+# Local databases (not Alembic migration sources)
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Editor / operating-system temporary files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Platform-specific developer settings (project.config.json is tracked)
+**/project.private.config.json
+**/project.config.local.json
+
+# Credentials and private signing material; audit before publication
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.keystore
+*.jks
+id_rsa
+id_ed25519
+credentials.json
+service-account*.json
+
+# Intentional: pnpm-lock.yaml, backend/uv.lock, .env.example,
+# backend/openapi.json, Alembic migrations and public assets are trackable.

@@ -1,0 +1,6 @@
+@use '../../../styles/tokens' as tokens;
+.mj-button { font-weight: 700; border-radius: tokens.$radius-md; letter-spacing: 1px; }
+.mj-button--solid.mj-button--primary { box-shadow: 0 8px 16px rgba(50,134,100,.13); }
+.mj-button--solid.mj-button--secondary { background: tokens.$mint; color: tokens.$primary-dark; border-color: tokens.$mint; }
+.mj-button--outline.mj-button--secondary { border-color: tokens.$stroke; color: tokens.$ink; background: tokens.$card; }
+.mj-button--ghost.mj-button--secondary { color: tokens.$ink-muted; }

@@ -1,0 +1,8 @@
+@use '../../styles/tokens' as tokens;
+.room__status { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.room__subtitle { color: tokens.$ink-muted; font-size: 23px; }
+.room__player { display: flex; align-items: center; gap: 20px; padding: 14px 0; }
+.room__player-text { display: flex; flex-direction: column; gap: 9px; }
+.room__player-title { font-weight: 800; font-size: 28px; }
+.room__player-hint { color: tokens.$ink-muted; font-size: 20px; }
+.room__actions { display: flex; flex-direction: column; gap: 18px; }
