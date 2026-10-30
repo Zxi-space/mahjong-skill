@@ -1,0 +1,28 @@
+﻿需求ID,需求名称,来源/状态,优先级,主实施阶段,验证场景,备注
+U-P0-01,首页和模式入口,原规则 R-BASE,P0,Phase 09,AT-016,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-02,官方基础牌库,原规则 R-BASE,P0,Phase 04,AT-015,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-03,推荐牌库,原规则 R-BASE,P0,Phase 04,AT-002,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-04,经典卡盒,原规则 R-BASE,P0,Phase 05,AT-001,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-05,本机洗牌发牌,原规则 R-BASE,P0,Phase 05,AT-002,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-06,私密查看,原规则 R-BASE,P0,Phase 05,AT-003,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-07,使用弃牌误触撤销,原规则 R-BASE,P0,Phase 05,AT-003,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-08,下一局,原规则 R-BASE,P0,Phase 05,AT-002,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-09,联机建房,原规则 R-BASE,P0,Phase 06,AT-004,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-10,扫码或房间码加入,原规则 R-BASE,P0,Phase 06,AT-004,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-11,席位就绪,原规则 R-BASE,P0,Phase 06,AT-004,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-12,私有手牌,原规则 R-BASE,P0,Phase 06,AT-005,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-13,服务端随机发牌,原规则 R-BASE,P0,Phase 06,AT-005,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-14,发动技能,原规则 R-BASE,P0,Phase 07,AT-006,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-15,防御响应,原规则 R-BASE,P0,Phase 07,AT-007,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-16,人工确认实体效果,原规则 R-BASE,P0,Phase 07,AT-008,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-17,电子结算及记录,原规则 R-BASE,P0,Phase 07,AT-009,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-18,断线重连,原规则 R-BASE,P0,Phase 08,AT-010,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-19,争议及异常终止,原规则 R-BASE,P0,Phase 08,AT-008,完整三端联调在 Phase 09；Gate 10 回归
+U-P0-20,局场结束,原规则 R-BASE,P0,Phase 06,AT-004,完整三端联调在 Phase 09；Gate 10 回归
+U-P1-01,模板化自定义技能,原规则 R-BASE,P1,Phase 12,Gate 12,不提前变成 P0
+U-P1-02,卡牌编辑器,原规则 R-BASE,P1,Phase 12,Gate 12,不提前变成 P0
+U-P1-03,自定义牌库,原规则 R-BASE,P1,Phase 12,Gate 12,不提前变成 P0
+U-P1-04,牌库分享,原规则 R-BASE,P1,Phase 12,Gate 12,不提前变成 P0
+U-P1-05,版本冻结,原规则 R-BASE,P1,Phase 12,Gate 12,不提前变成 P0
+U-P1-06,个人卡盒持久化,原规则 R-BASE,P1,Phase 12,Gate 12,不提前变成 P0
+U-P1-07,动画与低动效,原规则 R-BASE,P1,Phase 12,Gate 12,不提前变成 P0

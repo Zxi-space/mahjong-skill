@@ -1,0 +1,29 @@
+﻿主题,用途,前景 Token,背景 Token,比值,是否达到 4.5:1
+light,正文 / 画布,--qb-text-primary,--qb-bg-canvas,13.45,是
+dark,正文 / 画布,--qb-text-primary,--qb-bg-canvas,15.66,是
+light,正文 / 容器,--qb-text-primary,--qb-bg-surface,13.77,是
+dark,正文 / 容器,--qb-text-primary,--qb-bg-surface,13.82,是
+light,次级正文 / 容器,--qb-text-secondary,--qb-bg-surface,7.29,是
+dark,次级正文 / 容器,--qb-text-secondary,--qb-bg-surface,11.08,是
+light,辅助文字 / 容器,--qb-text-muted,--qb-bg-surface,4.76,是
+dark,辅助文字 / 容器,--qb-text-muted,--qb-bg-surface,7.85,是
+light,主按钮文字,--qb-on-primary,--qb-action-primary,6.55,是
+dark,主按钮文字,--qb-on-primary,--qb-action-primary,4.94,是
+light,主按钮 hover 文字,--qb-on-primary,--qb-action-hover,8.65,是
+dark,主按钮 hover 文字,--qb-on-primary,--qb-action-hover,6.55,是
+light,主按钮 pressed 文字,--qb-on-primary,--qb-action-pressed,11.73,是
+dark,主按钮 pressed 文字,--qb-on-primary,--qb-action-pressed,8.65,是
+light,纸质卡说明,--qb-card-ink,--qb-card-paper,13.04,是
+dark,纸质卡说明,--qb-card-ink,--qb-card-paper,13.04,是
+light,技能进攻标签,--qb-skill-action-text,--qb-skill-action-bg,4.82,是
+dark,技能进攻标签,--qb-skill-action-text,--qb-skill-action-bg,7.4,是
+light,技能防御标签,--qb-skill-defense-text,--qb-skill-defense-bg,5.24,是
+dark,技能防御标签,--qb-skill-defense-text,--qb-skill-defense-bg,8.43,是
+light,技能增益标签,--qb-skill-buff-text,--qb-skill-buff-bg,6.03,是
+dark,技能增益标签,--qb-skill-buff-text,--qb-skill-buff-bg,8.13,是
+light,技能干扰标签,--qb-skill-disrupt-text,--qb-skill-disrupt-bg,6.16,是
+dark,技能干扰标签,--qb-skill-disrupt-text,--qb-skill-disrupt-bg,8.06,是
+light,技能特殊标签,--qb-skill-special-text,--qb-skill-special-bg,6.42,是
+dark,技能特殊标签,--qb-skill-special-text,--qb-skill-special-bg,8.84,是
+light,错误提示,--qb-error,--qb-error-bg,4.83,是
+dark,错误提示,--qb-error,--qb-error-bg,7.67,是

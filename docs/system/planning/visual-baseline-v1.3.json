@@ -1,0 +1,18 @@
+{
+  "version": "V1.3",
+  "approved_at": "2026-10-30",
+  "visual_style": "极简线条手绘 / 奶油白 / 深麻将绿 / 雀叽家族麻将牌IP",
+  "reference_map": {
+    "client": "references/01-client-approved-20261030.webp",
+    "portal": "references/02-portal-approved-20261030.webp",
+    "admin": "references/03-admin-approved-20261030.webp"
+  },
+  "code_roots": {
+    "client": "frontend/client",
+    "portal": "frontend/portal",
+    "admin": "frontend/admin",
+    "backend": "backend"
+  },
+  "dark_status": "功能需求已确认，新版Dark设计图待验收",
+  "product_boundary": "线下麻将电子技能卡辅助工具；不做线上实体麻将手牌、牌墙、牌河、摸牌、出牌、胡牌与计分"
+}

@@ -1,0 +1,108 @@
+﻿ID,分类,组件,尺寸/布局,职责/子元素,关键属性,必须状态,适用端,素材依赖,2026新版验收说明
+QB-001,导航,BrandLogo,横版可缩放；头部宽 96–160,主图形+中文 Logo+跳首页,"variant,size,href",浅/深背景、加载失败,ALL,品牌 SVG,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-002,导航,TopNavigation,高度 64/72,Logo/栏目/CTA/用户动作,"items,active,sticky",当前、hover、移动折叠,Portal,Logo/导航图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-003,导航,MiniNavBar,安全区后 44–48,返回/标题/小程序胶囊避让,"title,left,right",默认、返回、沉浸式,Mini/H5,无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-004,导航,BottomTabBar,底部 56 + safe-area,首页/卡盒/组局/我的,"items,active",默认、选中、徽标,Mini/H5,线性图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-005,导航,Sidebar,232–248,Admin 菜单组/当前项/折叠,"groups,active,collapsed",hover、选中、展开、禁用,Admin,Logo/图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-006,导航,Breadcrumb,高度 32,层级路径/返回,items,截断、点击、当前,Admin/Portal,无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-007,导航,PageHeader,最小 56,标题/辅助说明/右操作,"title,subtitle,actions",正常、窄屏折行,ALL,无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-008,导航,SearchCommand,宽 280–360,跨卡/房间/用户检索,"scope,query",加载、空、键盘、错误,Admin,放大镜,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-009,导航,NavigationFlyout,宽 320,Portal 栏目下拉卡,"anchor,items",开/关、焦点离开,Portal,栏目缩略图,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-010,导航,MobileBack,44 hit-area,详情返回,onBack,默认/禁用,Mini/H5,箭头,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-011,导航,AppHeaderTools,40 hit-area each,搜索/分享/设置/消息,actions,徽标/长按提示,Mini/H5,线性图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-012,按钮,Button,28/32/40/44/52,全站操作按钮,"variant,size,loading,disabled","default,hover,pressed,focus,loading,disabled",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-013,按钮,IconButton,40/44 hit-area,无文字动作,"icon,label","hover,pressed,focus,disabled",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-014,按钮,ButtonGroup,间距 8/12,并列次/主操作,"actions,align","disabled,loading",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-015,按钮,SegmentedControl,32/36/40,互斥选项,"options,value","selected,focus,disabled",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-016,按钮,TabList,高 40–44,同页数据视图切换,"tabs,active","selected,overflow,focus",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-017,按钮,FloatingAction,48–56,新建操作快捷入口,"icon,label","open,focus,hidden",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-018,按钮,StickyActionBar,高 68+safe,固定主CTA与辅助操作,"primary,secondary","loading,disabled,keyboard",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-019,按钮,SplitAction,组合宽 100%,技能发动与更多选项,"main,options","busy,menu-open",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-020,按钮,CopyAction,md,复制 ID/链接,"value,toast","success,error",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-021,按钮,ShareAction,md,分享卡牌/房间,shareData,"ready,unsupported,error",Mini/H5/Portal,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-022,表单,TextInput,40/44,短文本,"value,maxLength,clearable","focus,error,disabled,filled",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-023,表单,TextArea,min 92,多行介绍/描述,"rows,maxLength,counter","focus,error,disabled",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-024,表单,NumberInput,40/44,数量/局数/次数,"min,max,step","error,boundary",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-025,表单,SearchInput,40/44,卡牌图鉴搜索,"debounce,clear","loading,empty,error",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-026,表单,Select,40/44,分类/模板/筛选,"options,value","open,selected,disabled,error",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-027,表单,MultiSelect,40,牌库选牌/批量操作,"options,values","partial,all,empty",Admin/Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-028,表单,Checkbox,24 + 44 hit,同意/多选,"checked,indeterminate","on,off,indeterminate",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-029,表单,RadioGroup,44 row,单选模式/玩法,"options,value","selected,disabled,error",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-030,表单,Switch,44 hit,允许进阶技能/公开,checked,"on,off,disabled,loading",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-031,表单,FormField,按容器,标签/说明/控件/错误,"name,label,help","required,error,success",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-032,表单,FormSection,卡片边距 20,分组表单,"title,description",折叠/展开,Admin/Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-033,表单,DateRangePicker,40,时间分析区间,"start,end,presets","open,error,clear",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-034,表单,FileUploader,拖拽≥120,上传卡牌插画与头像,"accept,maxSize","idle,uploading,error,success",Admin/Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-035,表单,AvatarPicker,96/120,选择用户头像,"value,crop","open,uploading,error",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-036,表单,TemplateEffectEditor,单列/双栏,效果模板+合法参数,"effectCode,params,schema","invalid,ready,preview",Mini/H5/Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-037,表单,FormActions,底栏/右对齐,保存/取消/丢弃草稿,"dirty,submitting","disabled,loading,success",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-038,状态与数据,StatusBadge,高 22–26,状态标签+文字,"status,icon","success,warning,error,info,neutral",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-039,状态与数据,SkillTypeBadge,高 22,行动/防御/增益/干扰/特殊,type,"active,muted",ALL,技能类别图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-040,状态与数据,CounterBadge,高 18–22,数量/未读,"count,max","0,1+,overflow",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-041,状态与数据,StatCard,高度 108–128,图标/数字/环比,"value,delta,label","loading,empty,error",Admin,小插图可选,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-042,状态与数据,MetricGrid,4/2/1 列,多 KPI 组合,metrics,"loading,breakpoint",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-043,状态与数据,DataTable,响应横滚,真实数据表/排序/操作,"columns,rows,pagination","loading,empty,error,selected",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-044,状态与数据,TableToolbar,高度 48,搜索/筛选/批量/新建,"filters,actions","empty-selection,filtered",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-045,状态与数据,Pagination,页 1..N,翻页与 page size,"page,total,size","disabled,loading",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-046,状态与数据,TrendChart,高度 240–320,趋势线图/数据提示,"series,range","loading,empty,error",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-047,状态与数据,DonutChart,高度 220–280,技能分类占比,"data,labels","loading,empty",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-048,状态与数据,RankingList,5/10 行,热门技能排行,"data,limit","empty,loading",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-049,状态与数据,DescriptionList,单/双列,技能详情规则项,items,"missing,expanded",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-050,状态与数据,ActivityFeed,列表行 52–76,事件/操作动态,events,"empty,more",Admin/Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-051,状态与数据,EventTimeline,纵向 12gap,技能结算事件,"events,status","pending,complete,disputed",Mini/H5/Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-052,状态与数据,ProgressBar,高度 4/8,局数进度/上传,value,"loading,success,error",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-053,状态与数据,Skeleton,按组件同形,短暂加载占位,variant,loading,ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-054,状态与数据,EmptyState,居中 160–280,插画+说明+CTA,"kind,action","no-data,no-result,offline",ALL,状态插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-055,状态与数据,ErrorState,居中,错误说明+重试,"code,retry","error,permission,expired",ALL,状态插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-056,状态与数据,Toast,单/多行,操作反馈,"message,type","success,error,warning,info",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-057,浮层,Dialog,宽 360–560,确认/编辑/危险操作,"title,actions","open,loading,error",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-058,浮层,ConfirmDialog,宽 360–440,发起技能/解散/删除,"message,confirm","open,pending,success",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-059,浮层,BottomSheet,底部圆角 20,移动端快捷选择/规则,"open,content","open,drag,keyboard",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-060,浮层,Drawer,宽 440–560,Admin 明细侧边抽屉,"open,content","open,loading,error",Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-061,浮层,Popover,宽 240–320,菜单/帮助,anchor,"open,focus,close",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-062,浮层,DropdownMenu,行高 40,二级操作菜单,items,"open,disabled,danger",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-063,浮层,Tooltip,max 240,解释操作,text,"hover,focus",Admin/Portal,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-064,浮层,ImageLightbox,全屏,打开大图/卡牌插画,"src,alt","open,loading,error",ALL,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-065,浮层,QrCodeDialog,宽 320–380,房间邀请二维码,roomUrl,"loading,expired,refresh",Mini/H5,非图片二维码实际生成,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-066,浮层,RulesSheet,底部/居中,显示技能完整规则,skill,"open,scroll",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-067,浮层,NetworkBanner,顶部固定,离线/重连提醒,connection,"online,reconnecting,offline",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-068,卡牌与牌库,SkillCard,5:7 正面,插画+标题+效果+类型+次数,"skill,variant","idle,selected,used,disabled",Mini/H5/Portal/Admin,卡面插画/图框,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-069,卡牌与牌库,SkillCardMini,约 72×100,小电子技能卡/图鉴缩略,skill,"active,used,hidden",Mini/H5,卡面缩略插画,只管理电子技能卡及技能状态；不绘制线上麻将手牌、牌墙、牌河、摸牌/出牌；真实权限校验。
+QB-070,卡牌与牌库,SkillCardBack,5:7 背面,未翻开/隐藏技能,theme,"default,flipped",Mini/H5,官方卡背,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-071,卡牌与牌库,SkillCardDetail,手机宽-32,卡大图/效果/时机/目标,"skill,actions","ready,disabled,used",Mini/H5/Portal,技能详情插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-072,卡牌与牌库,DeckCover,4:5/16:10,官方/自定义牌库封面,deck,"default,featured",ALL,卡盒封面,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-073,卡牌与牌库,DeckSelector,水平/网格,选用官方/自定义牌库,"decks,selected","selected,empty",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-074,卡牌与牌库,DeckSummary,卡片,名称/数量/编辑/使用,deck,"active,inactive,draft",Mini/H5/Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-075,卡牌与牌库,DeckBuilder,移动单列/桌面双列,已选技能+筛选+预览,"cards,limits","empty,dirty,conflict",Mini/H5/Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-076,卡牌与牌库,DrawDeck,正面/背面展示,洗牌/抽卡/抽到结果,"deck,state","ready,shuffling,reveal,empty",Mini/H5,卡背/抽卡动效,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-077,卡牌与牌库,DrawResult,宽 280–360,抽到卡/再抽/使用,skill,"reveal,ready,share",Mini/H5,星花透明动效,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-078,卡牌与牌库,HandTray,底部可滚,我的 2–3 张技能电子技能卡,"cards,max","available,used,empty",Mini/H5,卡背/卡面,只管理电子技能卡及技能状态；不绘制线上麻将手牌、牌墙、牌河、摸牌/出牌；真实权限校验。
+QB-079,卡牌与牌库,UsedCardPile,2列,已用/弃牌列表,cards,"empty,loading",Mini/H5,卡背缩略,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-080,卡牌与牌库,SkillEffectSummary,3～6 行,时机/目标/限制/效果,effect,"expanded,warning",ALL,语义图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-081,卡牌与牌库,SkillActionPanel,sticky,发动/弃牌/查看规则,"skill,phase","ready,responding,done,error",Mini/H5,无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-082,卡牌与牌库,SkillResponsePanel,底部Sheet,目标防御/放弃响应,"incoming,choices","waiting,declined,countered",Mini/H5,盾牌小插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-083,卡牌与牌库,CardEditorPreview,5:7,实时卡面和参数预览,formValue,"invalid,valid",Mini/H5/Admin,空白卡面图框,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-084,卡牌与牌库,CardArtPicker,四列/两列,选择画风插画,arts,"selected,locked,empty",Mini/H5/Admin,官方插画集,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-085,卡牌与牌库,SkillTemplateList,卡片列表,15种安全预设效果模板,templates,"selected,disabled",Mini/H5/Admin,模板示意图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-086,卡牌与牌库,CardFilterBar,筛选chip+下拉,类型/可用性/兼容,filters,"open,active,empty",Mini/H5/Portal,无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-087,卡牌与牌库,CardGallery,2列手机/6列PC,技能图鉴网格,skills,"loading,empty,filtered",Mini/H5/Portal,技能缩略,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-088,卡牌与牌库,CharacterCard,2-4列,七角色简介,character,"hover,expanded",Portal/Mini/H5,角色透明立绘,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-089,房间与对局工具,RoomCreateForm,单列,选牌库/人数/规则/房名,settings,"dirty,invalid,ready",Mini/H5,图标/SVG或无,只管理电子技能卡及技能状态；不绘制线上麻将手牌、牌墙、牌河、摸牌/出牌；真实权限校验。
+QB-090,房间与对局工具,RoomLobby,单列,房号/4座/规则/开始,"room,players","waiting,ready,started",Mini/H5,四方位头像,只管理电子技能卡及技能状态；不绘制线上麻将手牌、牌墙、牌河、摸牌/出牌；真实权限校验。
+QB-091,房间与对局工具,SeatAvatar,48/64,东南西北席位,"seat,user,status","empty,ready,disconnected",Mini/H5,四方位小头像,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-092,房间与对局工具,RoomInvite,卡片,二维码+房号+分享,invite,"ready,expired",Mini/H5,房间插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-093,房间与对局工具,RoomStatusBar,高度 40–64,局数/技能模式/连线状态,room,"live,paused,ended",Mini/H5,图标/SVG或无,只管理电子技能卡及技能状态；不绘制线上麻将手牌、牌墙、牌河、摸牌/出牌；真实权限校验。
+QB-094,房间与对局工具,SkillResolution,面板/步骤条,技能待响应/执行/完成,action,"pending,manual,disputed,done",Mini/H5/Admin,无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-095,房间与对局工具,RoomEventFeed,列表,公开技能动态,events,"new,empty,redacted",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-096,房间与对局工具,RoundActions,固定底栏,下一局/结束/暂停技能,permissions,"waiting,confirm,done",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-097,房间与对局工具,RoomReconnect,Banner/Modal,断线恢复/快照一致,room,"reconnect,failed,recovered",Mini/H5,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-098,房间与对局工具,RoomDispute,Sheet,争议/房主手动裁定,"action,reason","pending,resolved,void",Mini/H5/Admin,图标/SVG或无,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-099,营销与管理,HeroSection,480–620PC,标语/说明/CTA/插画,"content,art","desktop,mobile",Portal,Hero 手绘场景,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-100,营销与管理,FeatureStrip,4/2/1列,产品优势项,features,responsive,Portal,线性功能图标,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-101,营销与管理,HowItWorks,3步骤,选卡/抽卡/线下执行,steps,"desktop,mobile",Portal,步骤插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-102,营销与管理,ScenarioGallery,两列/瀑布,好友/家庭/社区等场景,scenarios,"hover,loading",Portal,场景插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-103,营销与管理,MarketingCTA,整宽,开始试玩、进入小程序,"primary,secondary","desktop,mobile",Portal,局部背景,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-104,营销与管理,Footer,多列/折叠,关于/隐私/反馈,links,responsive,Portal,简化 Logo,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-105,营销与管理,AdminReviewPanel,抽屉/详情页,卡牌审核/理由/历史,record,"pending,approved,rejected",Admin,卡牌缩略,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-106,营销与管理,AdminAssetLibrary,网格/表格,素材库管理/版本/授权,assets,"uploading,expired,archived",Admin,素材缩略,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。
+QB-107,营销与管理,AdminEmptyDashboard,内容区,无数据初始化引导,action,"empty,loading",Admin,淡色状态插画,真实数据/可编辑文字/浅深主题/小程序安全区（按端）；简约线描风而非旧厚重卡牌。

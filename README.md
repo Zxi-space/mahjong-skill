@@ -60,9 +60,11 @@ pnpm mahjong-skill:analyze:client:h5             # 资源体积报告
 
 ## 文档
 
-- [开发环境、命令与故障排查](docs/development.md)
+- **[工程与系统文档总导航](docs/README.md)**：包含 2026-10-30 产品需求、玩法原文、三端设计系统、阶段计划、视觉参考、Token 与验收清单
 - [技术架构和项目边界](docs/architecture.md)
+- [开发环境、命令与故障排查](docs/development.md)
 - [Git 初始化与 GitHub 推送指南](docs/github.md)
+- [完整系统资料包](docs/system/README.md)（规范与计划，不代表相关功能已经落地）
 - [代码贡献规范](CONTRIBUTING.md)
 - [Client 跨端测试矩阵](frontend/client/COMPATIBILITY.md)
 
