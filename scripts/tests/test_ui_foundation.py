@@ -16,7 +16,7 @@ class ClientUIFoundationTests(unittest.TestCase):
     def test_every_ui_export_has_implementation(self):
         entry = (CLIENT / 'components/ui/index.ts').read_text(encoding='utf-8')
         names = re.findall(r"export \{ (Mj\w+) \} from './([\w-]+)'", entry)
-        self.assertEqual(11, len(names))
+        self.assertGreaterEqual(len(names), 14)
         for name, folder in names:
             code = (CLIENT / f'components/ui/{folder}/index.tsx').read_text(encoding='utf-8')
             self.assertIn(f'function {name}', code)

@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export function SiteFooter(){return <footer className='site-footer'><div className='portal-container site-footer-inner'><div className='site-footer-brand'><strong>雀变</strong><p>线下麻将电子技能卡辅助工具</p><small>© 2026 Mahjong Skill</small></div><nav aria-label='页脚导航'><Link href='#top'>返回顶部</Link><Link href='#features'>产品特色</Link><Link href='#steps'>使用方法</Link></nav></div></footer>}

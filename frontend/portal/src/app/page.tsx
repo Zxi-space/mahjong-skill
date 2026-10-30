@@ -1,13 +1,19 @@
-import { ThemeSwitcher } from '../components/theme-switcher'
-import Link from 'next/link'
-import { ArrowUpRight, Layers3, UsersRound, Smartphone, Sparkles, Check, BookOpen } from 'lucide-react'
-const highlights = [
-  {icon: Layers3, title: '技能卡牌', desc: '基于效果模板创建，玩法轻松扩展。'},
-  {icon: UsersRound, title: '好友同局', desc: '扫码加入房间，同步技能动作。'},
-  {icon: Smartphone, title: '多端使用', desc: '微信小程序与 H5，打开就能使用。'},
+import { ArrowRight, BookOpen, Handshake, Lightbulb, Layers3, PartyPopper, Smartphone, Users, Sparkles, ShieldCheck } from 'lucide-react'
+import { SiteHeader } from '../components/layout/site-header'
+import { SiteFooter } from '../components/layout/site-footer'
+import { SectionHeading } from '../components/ui/section-heading'
+import { FeatureCard } from '../components/ui/feature-card'
+const features = [
+  {icon:<Lightbulb size={24}/>,title:'简单上手',description:'现场打开电子技能卡，按照提示与牌友协商执行。'},
+  {icon:<Layers3 size={24}/>,title:'玩法更丰富',description:'围绕技能卡增加互动，不替代真实麻将规则与判定。'},
+  {icon:<Users size={24}/>,title:'好友在一起',description:'面向真实线下牌局，电子房间只同步技能相关信息。'},
+  {icon:<Sparkles size={24}/>,title:'持续更新',description:'技能定义和卡组可按版本迭代，玩法边界保持清晰。'},
 ]
-export default function HomePage() {
-  return <div className='page'><header className='header container'><div className='brand'><span className='brand-icon'>雀</span><div><strong>雀变</strong><small>MAHJONG SKILL</small></div></div><nav><Link href='#features'>玩法特色</Link><Link href='#about'>关于雀变</Link></nav><div className='portal-header-actions'><ThemeSwitcher /><a className='header-link' href={process.env.NEXT_PUBLIC_CLIENT_H5_URL || 'http://localhost:5174'}>立即体验 <ArrowUpRight size={16}/></a></div></header>
-  <main><section className='hero container'><div className='hero-copy'><div className='eyebrow'><Sparkles size={16}/> MAHJONG, WITH A TWIST</div><h1>好牌局，<br/><em>玩出新花样。</em></h1><p>雀变，让线下麻将多一点惊喜。用电子技能牌开启趣味互动，把每场牌局变成更有趣的相聚。</p><div className='hero-actions'><a className='button primary' href={process.env.NEXT_PUBLIC_CLIENT_H5_URL || 'http://localhost:5174'}>开始体验 <ArrowUpRight size={18}/></a><a className='button secondary' href='#features'><BookOpen size={18}/>了解玩法</a></div><div className='hero-meta'><Check size={17}/> 无需下载独立 App · 微信小程序 / H5</div></div><div className='tile-visual' aria-label='品牌插画'><div className='halo halo-one'/><div className='halo halo-two'/><div className='mahjong-tile'><span className='tile-character'>中</span><span className='tile-star'>✦</span></div><div className='little-tile'>發</div><div className='bubble'>雀叽正在准备新技能 ✨</div></div></section>
-  <section className='features' id='features'><div className='container'><div className='section-title'><span className='eyebrow'>WHY MAHJONG SKILL</span><h2>小小技能，带来大大乐趣</h2><p>不是另一款麻将游戏，而是让你在线下牌局中使用技能牌的电子工具。</p></div><div className='cards'>{highlights.map(({icon:Icon,title,desc}) => <article className='feature-card' key={title}><div className='feature-icon'><Icon size={25}/></div><h3>{title}</h3><p>{desc}</p></article>)}</div></div></section><section className='about container' id='about'><div><span className='eyebrow'>ABOUT THE PROJECT</span><h2>让线下的快乐，<br/>延续到每次相聚。</h2></div><p>门户端负责品牌、玩法与公开内容；真正的房间和技能互动发生在雀变用户端。当前为架构初始化展示页面，尚未对接真实技能数据。</p></section></main><footer className='footer container'>© 2026 雀变 · Mahjong Skill <span>Made for better game nights.</span></footer></div>
-}
+const steps=[{number:'01',title:'选择使用方式',detail:'经典卡盒或好友技能房间，按现场需要选择。'},{number:'02',title:'查看电子技能',detail:'抽取、持有或使用电子技能卡；私有卡信息仅本人可见。'},{number:'03',title:'线下协商执行',detail:'涉及实体麻将动作时，由桌边玩家人工确认。'}]
+export default function HomePage(){return <div className='portal-page'><SiteHeader/><main>
+  <section className='portal-hero portal-container' aria-labelledby='portal-hero-title'><div className='portal-hero-copy'><span className='portal-eyebrow'><Sparkles size={17}/> MAHJONG SKILL</span><h1 id='portal-hero-title'>让麻将<br/><em>更有趣。</em></h1><p className='portal-hero-lead'>用电子技能牌为传统麻将加点新花样。</p><p className='portal-hero-detail'>和朋友一起，在线下牌局中体验更多互动。雀变不会替你摸牌、出牌或自动判定胜负。</p><div className='portal-hero-actions'><a className='portal-button portal-button--primary portal-button--large' href={process.env.NEXT_PUBLIC_CLIENT_H5_URL || 'http://localhost:5174'}>预览用户端 <ArrowRight size={19}/></a><a className='portal-button portal-button--outline portal-button--large' href='#steps'><BookOpen size={18}/>了解玩法</a></div><span className='portal-hero-note'><ShieldCheck size={16}/> 电子技能牌工具 · 面向真实线下麻将</span></div>
+  <div className='portal-hero-illustration' aria-label='麻将牌角色视觉占位，正式雀叽插画需另行接入'><span className='portal-hero-halo' aria-hidden='true'/><span className='portal-display-tile portal-display-tile--left' aria-hidden='true'>中</span><span className='portal-display-tile portal-display-tile--center' aria-hidden='true'>發</span><span className='portal-display-tile portal-display-tile--right' aria-hidden='true'>東</span><span className='portal-illustration-caption'>雀叽家族正式透明素材待接入</span></div></section>
+  <section id='features' className='portal-section portal-section--soft'><div className='portal-container'><SectionHeading eyebrow='FEATURES' title='让每一次相聚，多一点新鲜感' description='规则在现实桌面上，趣味在电子技能卡里。'/><div className='portal-features-grid'>{features.map(f=><FeatureCard key={f.title} {...f}/>)}</div></div></section>
+  <section id='steps' className='portal-section'><div className='portal-container'><SectionHeading eyebrow='HOW IT WORKS' title='三个步骤，轻松开始' description='真实流程将在技能系统接入后开放；目前仅展示产品的使用方式。'/><div className='portal-steps'>{steps.map(step=><article className='portal-step' key={step.number}><span className='portal-step-number'>{step.number}</span><h3>{step.title}</h3><p>{step.detail}</p></article>)}</div></div></section>
+  <section id='scenes' className='portal-section portal-section--soft'><div className='portal-container portal-scene'><div><span className='portal-eyebrow'><Handshake size={17}/> OFFLINE, TOGETHER</span><h2>给真实相聚的快乐，<br/>添一点变化。</h2><p>适用于好友聚会、家庭娱乐或线下活动。雀变只是电子技能的辅助工具，不是线上麻将游戏。</p></div><div className='portal-scene-card'><PartyPopper size={32}/><strong>和有趣的人，打更有趣的麻将！</strong><span><Smartphone size={16}/> 微信小程序 / H5</span></div></div></section>
+</main><SiteFooter/></div>}

@@ -9,8 +9,8 @@ import { SkillPreview } from '../../components/skill-preview'
 import './index.scss'
 
 export default function HomePage() {
-  return <MjPageContainer className='home'>
-    <View className='home__masthead'><Text className='home__brand'>🀄 雀变</Text><MjBadge tone='success'>跨端体验版</MjBadge></View>
+  return <MjPageContainer className='home' title='雀变' tab='home'>
+    <View className='home__masthead'><Text className='home__brand'>雀变</Text><MjBadge tone='success'>设计系统预览</MjBadge></View>
     <MjPageHeading eyebrow='MAHJONG SKILL' title='给牌局加点新花样！' description='雀变是一款线下麻将技能卡电子工具。你负责打牌，技能牌负责制造惊喜。' />
     <SkillPreview />
     <View className='home__actions'>

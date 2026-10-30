@@ -1,5 +1,4 @@
-@use '../../../styles/tokens' as tokens;
-.mj-empty { display: flex; align-items: center; flex-direction: column; gap: 15px; padding: 36px 20px; text-align: center; }
-.mj-empty__icon { font-size: 66px; }
-.mj-empty__title { font-size: 29px; font-weight: 800; }
-.mj-empty__description { font-size: 23px; line-height: 1.5; color: tokens.$ink-muted; }
+.mj-empty { display:flex; align-items:center; flex-direction:column; gap:14px; padding:48px 24px; text-align:center; }
+.mj-empty__glyph { width:104px; height:104px; border-radius:30px; background:var(--qb-bg-surface-soft); border:1px dashed var(--qb-border-strong); display:flex; align-items:center; justify-content:center; color:var(--qb-action-primary); font-size:56px; }
+.mj-empty__title { font-size:30px; font-weight:700; color:var(--qb-text-primary); }
+.mj-empty__description { font-size:24px; color:var(--qb-text-secondary); line-height:1.6; }

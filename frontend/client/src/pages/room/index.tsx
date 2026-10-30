@@ -17,7 +17,7 @@ export default function RoomPage() {
   const toggle = useRoomStore(s => s.toggleDemoRoom)
   const [confirmExit, setConfirmExit] = useState(false)
   const [notice, setNotice] = useState(false)
-  return <MjPageContainer className='room'>
+  return <MjPageContainer className='room' title='技能房间 · 演示' tab='room'>
     <MjPageHeading eyebrow='ROOM DEMO' title='房间互动演示' description='仅演示本地状态及 UI：尚未接入真实的房间、用户身份或实时通信。' />
     <MjCard><View className='room__status'><Text className='room__subtitle'>当前状态</Text><MjBadge tone={room ? 'success' : 'neutral'}>{room ? '演示中' : '未加入'}</MjBadge></View>
       {room ? <View className='room__player'><MjAvatar name='雀叽' size='large'/><View className='room__player-text'><Text className='room__player-title'>雀叽的演示房间</Text><Text className='room__player-hint'>单设备 Zustand 状态，无联网同步</Text></View></View> : <MjEmpty title='还没有加入房间' description='点击下方按钮进入本地演示状态' />}

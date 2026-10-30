@@ -1,3 +1,5 @@
-.mj-page { max-width: 960px; min-height: 100vh; margin: 0 auto; padding: 40px 30px calc(66px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; gap: 28px; }
-
-.mj-page__theme { align-self: flex-end; width: 310px; max-width: 100%; }
+.mj-screen { min-height: 100vh; background:var(--qb-bg-canvas); color:var(--qb-text-primary); display:flex; flex-direction:column; }
+.mj-page { width:100%; max-width:1040px; flex:1; margin:0 auto; padding: 32px 32px calc(152px + env(safe-area-inset-bottom)); display:flex; flex-direction:column; gap:28px; }
+.mj-page__theme { display:flex; align-items:center; justify-content:flex-end; gap:14px; }
+.mj-page__theme-label { font-size:22px; color:var(--qb-text-secondary); }
+@media (min-width: 768px) { .mj-page { max-width:1040px; } }

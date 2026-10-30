@@ -6,6 +6,7 @@ export default defineAppConfig({
   subPackages: [{ root: 'subpackages', pages: ['gallery/index'] }],
   window: {
     navigationBarTitleText: '雀变',
+    navigationStyle: 'custom',
     navigationBarBackgroundColor: '#FFFCF6',
     navigationBarTextStyle: 'black',
     backgroundColor: '#FFFCF6',

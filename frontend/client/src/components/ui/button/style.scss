@@ -1,6 +1,8 @@
-@use '../../../styles/tokens' as tokens;
-.mj-button { font-weight: 700; border-radius: tokens.$radius-md; letter-spacing: 1px; }
-.mj-button--solid.mj-button--primary { box-shadow: 0 8px 16px rgba(50,134,100,.13); }
-.mj-button--solid.mj-button--secondary { background: tokens.$mint; color: tokens.$primary-dark; border-color: tokens.$mint; }
-.mj-button--outline.mj-button--secondary { border-color: tokens.$stroke; color: tokens.$ink; background: tokens.$card; }
-.mj-button--ghost.mj-button--secondary { color: tokens.$ink-muted; }
+.mj-button { font-weight:700; border-radius:24px; letter-spacing:.2px; min-height:80px; transition: background-color .15s,opacity .15s; }
+.mj-button--solid.mj-button--primary { background:var(--qb-action-primary); color:var(--qb-on-primary); border-color:var(--qb-action-primary); box-shadow:0 8px 20px var(--qb-shadow-color); }
+.mj-button--solid.mj-button--primary:active { background:var(--qb-action-pressed); }
+.mj-button--solid.mj-button--secondary { background:var(--qb-bg-active); color:var(--qb-text-primary); border-color:var(--qb-border-default); }
+.mj-button--outline.mj-button--secondary { background:var(--qb-bg-surface); border:1px solid var(--qb-border-strong); color:var(--qb-action-primary); }
+.mj-button--ghost.mj-button--secondary { color:var(--qb-text-secondary); }
+.mj-button--outline.mj-button--danger, .mj-button--ghost.mj-button--danger { color:var(--qb-error); }
+.mj-button[disabled] { opacity:.55; }

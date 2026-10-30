@@ -10,3 +10,7 @@ export { MjLoading } from './loading'
 export { MjSheet } from './sheet'
 export { MjTabs } from './tabs'
 export { MjToast } from './toast'
+
+export { MjSwitch } from './switch'
+export { MjSkeleton } from './skeleton'
+export { MjErrorState } from './error-state'

@@ -1,0 +1,2 @@
+import type { ReactNode } from 'react'
+export function Panel({ title, description, actions, children, className='' }: {title?:string;description?:string;actions?:ReactNode;children:ReactNode;className?:string}) { return <section className={`admin-panel ${className}`.trim()}>{(title||actions)&&<header className='admin-panel-header'><div>{title&&<h2>{title}</h2>}{description&&<p>{description}</p>}</div>{actions}</header>}{children}</section> }
