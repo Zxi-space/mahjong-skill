@@ -1,18 +1,17 @@
-// 雀变 Client 本地 Design Tokens：请勿直接导入 Admin/Portal UI 源码。
-// 后续品牌母版定稿时，应从此处统一调整色值。
-$surface: #fff8ed;
-$surface-deep: #f5f0e2;
-$ink: #294739;
-$ink-muted: #728579;
-$primary: #328664;
-$primary-dark: #216e51;
-$mint: #e8f5eb;
-$card: #fffdf7;
-$stroke: #e0eadc;
-$danger: #d96562;
-$warning: #df9b35;
-$success: #2c8d63;
+// Client 内部 SCSS Alias。取值来自三端统一 --qb-* 语义 Token，不再硬编码独立颜色。
+$surface: var(--qb-bg-canvas);
+$surface-deep: var(--qb-bg-surface-soft);
+$ink: var(--qb-text-primary);
+$ink-muted: var(--qb-text-muted);
+$primary: var(--qb-action-primary);
+$primary-dark: var(--qb-action-hover);
+$mint: var(--qb-bg-hover);
+$card: var(--qb-bg-surface);
+$stroke: var(--qb-border-default);
+$danger: var(--qb-error);
+$warning: var(--qb-warning);
+$success: var(--qb-success);
 $radius-sm: 12px;
 $radius-md: 18px;
 $radius-lg: 26px;
-$shadow-card: 0 12px 36px rgba(42, 80, 53, .07);
+$shadow-card: 0 12px 36px var(--qb-shadow-color);

@@ -21,6 +21,8 @@ jobs:
       - uses: astral-sh/setup-uv@v7
         with:
           enable-cache: true
+      - name: Verify design token snapshots
+        run: python scripts/sync_theme_tokens.py --check
       - name: Check engineering scripts
         run: python -m unittest discover -s scripts/tests -p 'test_*.py'
       - name: Backend tests

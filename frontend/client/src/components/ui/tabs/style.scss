@@ -1,5 +1,5 @@
 @use '../../../styles/tokens' as tokens;
-.mj-tabs { display: flex; padding: 7px; gap: 7px; background: #edf1e7; border-radius: tokens.$radius-md; }
+.mj-tabs { display: flex; padding: 7px; gap: 7px; background: var(--qb-bg-surface-soft); border-radius: tokens.$radius-md; }
 .mj-tabs__item { flex: 1; border: none; background: transparent; color: tokens.$ink-muted; border-radius: tokens.$radius-sm; font-size: 24px; padding: 13px 8px; line-height: 1.5; margin: 0; }
 .mj-tabs__item:after { border: none; }
-.mj-tabs__item--active, .mj-tabs__item--active[disabled] { color: tokens.$primary-dark; font-weight: 700; background: tokens.$card; opacity: 1; box-shadow: 0 3px 8px rgba(40,70,40,.05); }
+.mj-tabs__item--active, .mj-tabs__item--active[disabled] { color: tokens.$primary-dark; font-weight: 700; background: tokens.$card; opacity: 1; box-shadow: 0 3px 8px var(--qb-shadow-color); }

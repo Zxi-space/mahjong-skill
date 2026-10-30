@@ -1,0 +1,12 @@
+.mj-theme-switcher {
+  display: flex; align-items: center; gap: 6px; padding: 5px;
+  border: 1px solid var(--qb-border-default);
+  border-radius: 999px; background: var(--qb-bg-surface-soft);
+}
+.mj-theme-switcher__item {
+  flex: 1; min-height: 60px; margin: 0; padding: 6px 12px;
+  border: 0; border-radius: 999px; background: transparent;
+  font-size: 21px; line-height: 1.4; color: var(--qb-text-secondary);
+}
+.mj-theme-switcher__item::after { border: 0; }
+.mj-theme-switcher__item--active { background: var(--qb-bg-active); color: var(--qb-text-primary); font-weight: 700; }

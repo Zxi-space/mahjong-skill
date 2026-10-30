@@ -1,16 +1,21 @@
+@use './styles/qb-theme';
 @use './styles/tokens' as tokens;
-// Taroify CSS custom properties (taroify 1.0.6); color tokens only, no global DOM selectors.
+
 page, body {
-  background: tokens.$surface;
-  color: tokens.$ink;
-  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  --primary-color: #{tokens.$primary};
-  --success-color: #{tokens.$success};
-  --warning-color: #{tokens.$warning};
-  --danger-color: #{tokens.$danger};
-  --button-primary-background-color: #{tokens.$primary};
-  --button-primary-border-color: #{tokens.$primary};
+  background: var(--qb-bg-canvas);
+  color: var(--qb-text-primary);
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.qb-theme-root {
+  color: var(--qb-text-primary);
+  background: var(--qb-bg-canvas);
+  --primary-color: var(--qb-action-primary);
+  --success-color: var(--qb-success);
+  --warning-color: var(--qb-warning);
+  --danger-color: var(--qb-error);
+  --button-primary-background-color: var(--qb-action-primary);
+  --button-primary-border-color: var(--qb-action-primary);
   --button-border-radius: 20px;
-  --popup-background-color: #{tokens.$card};
+  --popup-background-color: var(--qb-bg-elevated);
 }
 view, text, button, input, image { box-sizing: border-box; }

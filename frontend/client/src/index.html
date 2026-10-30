@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="format-detection" content="telephone=no" />
-    <meta name="theme-color" content="#fff8ed" />
+    <meta name="theme-color" content="#FFFCF6" />
     <title>雀变</title>
+    <script>
+      (function () {
+        try {
+          var p = localStorage.getItem('mahjong-skill-theme');
+          if (p !== 'dark' && p !== 'system') p = 'light';
+          var dark = p === 'dark' || (p === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.setAttribute('data-qb-theme', dark ? 'dark' : 'light');
+        } catch (e) { document.documentElement.setAttribute('data-qb-theme', 'light'); }
+      })();
+    </script>
+
     <script><%= htmlWebpackPlugin.options.script || '' %></script>
   </head>
   <body>

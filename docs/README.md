@@ -37,3 +37,5 @@
 4. 如文档出现文件名、数量或版本不一致，**先核对原资料，不要静默修改 7z 导入的原文件**；后续修订应新增版本或留变更记录。
 
 > 文件组织：整个外部系统资料包完整保存在 `docs/system/`，保持原始 `README.md`、`docs/`、`inventories/`、`planning/`、`references/`、`tokens/` 相对结构，便于其内部相对路径不受影响。
+
+- [三端主题底座与验收](./theme-foundation.md)

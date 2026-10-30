@@ -2,4 +2,4 @@
 @use '../../../styles/tokens' as tokens;
 .mj-card { @include mixins.surface-card; overflow: hidden; }
 .mj-card--padded { padding: 28px; }
-.mj-card--mint { background: tokens.$mint; border-color: #d1e8d4; }
+.mj-card--mint { background: tokens.$mint; border-color: var(--qb-border-subtle); }

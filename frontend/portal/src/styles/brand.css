@@ -1,7 +1,2 @@
-/* Portal 独立品牌变量：与雀变用户端视觉保持同源，组件保持解耦。 */
-:root {
-  --mj-brand-primary: #328664;
-  --mj-brand-deep: #294739;
-  --mj-brand-cream: #fff8ed;
-  --mj-brand-muted: #728579;
-}
+/* Legacy compatibility aliases; new UI must consume the --qb-* semantic tokens. */
+:root { --mj-brand-primary: var(--qb-action-primary); --mj-brand-deep: var(--qb-text-primary); --mj-brand-cream: var(--qb-bg-canvas); --mj-brand-muted: var(--qb-text-muted); }
