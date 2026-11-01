@@ -44,7 +44,7 @@ class ThemeFoundationTests(unittest.TestCase):
             self.assertIn('data-qb-theme', file.read_text(encoding='utf-8'))
         for app in (admin, portal):
             ui = (app/'src/components/theme-switcher.tsx').read_text(encoding='utf-8')
-            for phrase in ("'light'", "'dark'", "'system'", 'matchMedia', 'localStorage', 'aria-pressed'):
+            for phrase in ("'light'", "'dark'", "'system'", 'matchMedia', 'localStorage', 'DropdownMenuRadioGroup'):
                 self.assertIn(phrase, ui)
             css = (app/'src/styles/qb-tokens.css').read_text(encoding='utf-8')
             self.assertIn('--qb-card-paper: #FFF8EC;', css)
