@@ -9,6 +9,7 @@
 | [技术架构与代码边界](architecture.md) | Monorepo、三端职责、代码边界、服务与发布目录 |
 | [本地开发与工程命令](development.md) | 安装、启动、构建、测试、小程序 / H5 预览及故障排查 |
 | [Git / GitHub 指南](github.md) | 首次提交、远程仓库、忽略规则与协作 |
+| [Admin / Portal shadcn/ui 迁移](shadcn-migration.md) | Phase 03 Web 组件迁移、依赖更新、验证边界与运行步骤 |
 
 ## 系统文档（2026-10-30 资料包，原样归档）
 
