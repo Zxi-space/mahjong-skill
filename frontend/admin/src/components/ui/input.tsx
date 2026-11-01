@@ -1,3 +1,3 @@
-import { forwardRef } from 'react'
-import type { ComponentProps } from 'react'
-export const Input = forwardRef<HTMLInputElement, ComponentProps<'input'>>(function Input({className='',...props},ref){return <input ref={ref} className={`admin-input ${className}`.trim()} {...props}/>})
+import * as React from 'react'
+import { cn } from '../../lib/utils'
+export function Input({className,type,...props}:React.ComponentProps<'input'>){return <input data-slot='input' type={type} className={cn('flex h-10 w-full min-w-0 rounded-xl border border-[var(--qb-border-default)] bg-[var(--qb-bg-input)] px-3 py-2 text-sm text-[var(--qb-text-primary)] shadow-sm outline-none placeholder:text-[var(--qb-text-muted)] focus-visible:border-[var(--qb-focus-ring)] focus-visible:ring-2 focus-visible:ring-[var(--qb-focus-ring)]/25 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-[var(--qb-error)]',className)} {...props}/>}

@@ -1,4 +1,2 @@
 import type { ReactNode } from 'react'
-export function PageHeader({ title, description, eyebrow, actions }: {title:string;description?:string;eyebrow?:string;actions?:ReactNode}) {
-  return <div className='admin-page-header'><div>{eyebrow&&<p className='admin-eyebrow'>{eyebrow}</p>}<h1>{title}</h1>{description&&<p className='admin-page-description'>{description}</p>}</div>{actions&&<div className='admin-page-actions'>{actions}</div>}</div>
-}
+export function PageHeader({title,description,eyebrow,actions}:{title:string;description?:string;eyebrow?:string;actions?:ReactNode}) {return <div className='mb-6 flex flex-wrap items-end justify-between gap-4'><div className='space-y-2'>{eyebrow&&<p className='text-[11px] font-bold tracking-[.15em] text-[var(--qb-action-primary)]'>{eyebrow}</p>}<h1 className='text-[clamp(24px,3vw,30px)] font-bold leading-tight'>{title}</h1>{description&&<p className='text-sm leading-relaxed text-[var(--qb-text-secondary)]'>{description}</p>}</div>{actions&&<div className='flex flex-wrap gap-2'>{actions}</div>}</div>}

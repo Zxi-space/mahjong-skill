@@ -1,1 +1,3 @@
-export function Skeleton({width='100%',height=16,className=''}:{width?:string|number;height?:number;className?:string}) {return <span className={`admin-skeleton ${className}`} aria-hidden='true' style={{width,height}}/>}
+import * as React from 'react'
+import { cn } from '../../lib/utils'
+export function Skeleton({className,...props}:React.ComponentProps<'div'>){return <div data-slot='skeleton' aria-hidden='true' className={cn('animate-pulse rounded-lg bg-[var(--qb-bg-active)] motion-reduce:animate-none',className)} {...props}/>}

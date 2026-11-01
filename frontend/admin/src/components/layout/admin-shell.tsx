@@ -1,36 +1,16 @@
-import { useState } from 'react'
-import { NavLink, Link, useLocation } from 'react-router-dom'
-import { LayoutDashboard, Layers3, WalletCards, House, Users, ShieldCheck, Menu, X, Search, Settings2, Blocks, Bell, ChevronRight } from 'lucide-react'
-import { ThemeSwitcher } from '../theme-switcher'
 import type { ReactNode } from 'react'
-
-const menu = [
-  { to: '/', label: '工作台', icon: LayoutDashboard },
-  { to: '/skills', label: '卡牌管理', icon: Layers3 },
-  { to: '/decks', label: '牌库管理', icon: WalletCards },
-  { to: '/rooms', label: '房间管理', icon: House },
-  { to: '/users', label: '用户管理', icon: Users },
-  { to: '/review', label: '内容审核', icon: ShieldCheck },
-]
-const tools = [{to: '/components',label:'组件示例',icon:Blocks},{to: '/settings',label:'系统设置',icon:Settings2}]
-const labels = Object.fromEntries([...menu, ...tools].map(item=>[item.to,item.label]))
-export function AdminShell({ children }: { children: ReactNode }) {
-  const [open, setOpen] = useState(false)
-  const { pathname } = useLocation()
-  const current = labels[pathname] || '管理端'
-  return <div className='admin-shell'>
-    {open && <button aria-label='关闭导航菜单' className='sidebar-backdrop' onClick={()=>setOpen(false)}/>}
-    <aside className={`admin-sidebar ${open ? 'is-open' : ''}`} aria-label='管理端侧边栏'>
-      <Link className='admin-brand' to='/' onClick={()=>setOpen(false)}><span className='admin-brand-mark' aria-hidden='true'>雀</span><span><strong>雀变</strong><small>运营管理端</small></span></Link>
-      <div className='admin-nav-group'><span className='admin-nav-title'>运营管理</span><nav aria-label='运营管理'>{menu.map(({to,label,icon:Icon})=><NavLink key={to} to={to} end={to==='/'} onClick={()=>setOpen(false)} className={({isActive})=>`admin-nav-link ${isActive ? 'is-active' : ''}`}><Icon size={18}/><span>{label}</span>{pathname===to&&<ChevronRight size={15} className='admin-nav-arrow'/>}</NavLink>)}</nav></div>
-      <div className='admin-nav-group'><span className='admin-nav-title'>开发与设置</span><nav aria-label='开发与设置'>{tools.map(({to,label,icon:Icon})=><NavLink key={to} to={to} onClick={()=>setOpen(false)} className={({isActive})=>`admin-nav-link ${isActive ? 'is-active' : ''}`}><Icon size={18}/><span>{label}</span></NavLink>)}</nav></div>
-      <div className='admin-sidebar-note'>本地开发 · 管理认证待接入</div>
-    </aside>
-    <div className='admin-main'>
-      <header className='admin-header'><div className='admin-header-start'><button className='admin-menu-toggle admin-icon-button' aria-label={open?'关闭菜单':'打开菜单'} onClick={()=>setOpen(!open)}>{open ? <X size={21}/> : <Menu size={21}/>}</button><span className='admin-header-location'>{current}</span><span className='admin-header-separator'>/</span><span className='admin-header-caption'>雀变运营管理</span></div>
-        <div className='admin-header-actions'><div className='admin-search-label'><Search size={16}/><span>搜索待接入</span></div><ThemeSwitcher/><span className='admin-icon-placeholder' title='通知功能待接入'><Bell size={19}/></span><span className='admin-user-avatar' aria-label='管理员身份待接入'>管</span></div>
-      </header>
-      <main className='admin-content' id='main-content'>{children}</main>
-    </div>
-  </div>
-}
+import { Link,useLocation } from 'react-router-dom'
+import { LayoutDashboard,Layers3,WalletCards,House,Users,ShieldCheck,Settings2,Blocks,ChevronRight,Bell,Search } from 'lucide-react'
+import { ThemeSwitcher } from '../theme-switcher'
+import { Button } from '../ui/button'
+import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from '../ui/tooltip'
+import { Separator } from '../ui/separator'
+import { Input } from '../ui/input'
+import { Sidebar,SidebarProvider,SidebarHeader,SidebarContent,SidebarFooter,SidebarGroup,SidebarGroupLabel,SidebarGroupContent,SidebarMenu,SidebarMenuItem,SidebarMenuButton,SidebarInset,SidebarTrigger,useSidebar } from '../ui/sidebar'
+import { Badge } from '../ui/badge'
+const menu=[{to:'/',label:'工作台',icon:LayoutDashboard},{to:'/skills',label:'卡牌管理',icon:Layers3},{to:'/decks',label:'牌库管理',icon:WalletCards},{to:'/rooms',label:'房间管理',icon:House},{to:'/users',label:'用户管理',icon:Users},{to:'/review',label:'内容审核',icon:ShieldCheck}]
+const tools=[{to:'/components',label:'组件示例',icon:Blocks},{to:'/settings',label:'系统设置',icon:Settings2}]
+const labels=Object.fromEntries([...menu,...tools].map(item=>[item.to,item.label]))
+function Navigation(){const {setMobileOpen,collapsed}=useSidebar();const {pathname}=useLocation();return <Sidebar><SidebarHeader><Link to='/' onClick={()=>setMobileOpen(false)} className='flex items-center gap-3 px-2 py-1'><span className='grid size-11 shrink-0 place-items-center rounded-xl bg-[var(--qb-action-primary)] text-lg font-bold text-[var(--qb-on-primary)]'>雀</span><span className={collapsed?'lg:hidden':'block'}><strong className='block text-xl'>雀变</strong><small className='text-[11px] text-[var(--qb-text-muted)]'>运营管理端</small></span></Link></SidebarHeader><SidebarContent>{[{title:'运营管理',items:menu},{title:'开发与设置',items:tools}].map(group=><SidebarGroup key={group.title}><SidebarGroupLabel>{group.title}</SidebarGroupLabel><SidebarGroupContent><SidebarMenu>{group.items.map(({to,label,icon:Icon})=><SidebarMenuItem key={to}><SidebarMenuButton asChild isActive={pathname===to}><Link to={to} title={collapsed?label:undefined} onClick={()=>setMobileOpen(false)}><Icon/><span className={collapsed?'lg:hidden':'block'}>{label}</span></Link></SidebarMenuButton></SidebarMenuItem>)}</SidebarMenu></SidebarGroupContent></SidebarGroup>)}</SidebarContent><SidebarFooter><Separator/><p className={`pt-3 text-xs text-[var(--qb-text-muted)] ${collapsed?'lg:hidden':''}`}>本地开发 · 管理认证待接入</p></SidebarFooter></Sidebar>}
+function Header(){const {pathname}=useLocation();return <header className='flex min-h-16 items-center justify-between gap-4 border-b border-[var(--qb-border-subtle)] bg-[var(--qb-bg-header)] px-4 lg:px-6'><div className='flex min-w-0 items-center gap-3'><SidebarTrigger/><span className='truncate text-sm font-bold'>{labels[pathname]||'管理端'}</span><ChevronRight className='size-4 text-[var(--qb-text-muted)]'/><span className='hidden text-xs text-[var(--qb-text-secondary)] sm:inline'>雀变运营管理</span></div><div className='flex items-center gap-2'><div className='relative hidden w-48 xl:block'><Search className='absolute left-3 top-3 size-4 text-[var(--qb-text-muted)]'/><Input aria-label='全局搜索尚未开放' disabled placeholder='全局搜索待接入' className='pl-9'/></div><ThemeSwitcher/><Tooltip><TooltipTrigger asChild><span><Button variant='ghost' size='icon' disabled aria-label='通知尚未接入'><Bell/></Button></span></TooltipTrigger><TooltipContent>通知服务暂未接入</TooltipContent></Tooltip><Badge variant='secondary' className='size-9 justify-center rounded-full p-0'>管</Badge></div></header>}
+export function AdminShell({children}:{children:ReactNode}){return <TooltipProvider><SidebarProvider><Navigation/><SidebarInset><Header/><main className='mx-auto w-full max-w-[1560px] px-4 py-6 lg:px-6 lg:py-7' id='main-content'>{children}</main></SidebarInset></SidebarProvider></TooltipProvider>}
