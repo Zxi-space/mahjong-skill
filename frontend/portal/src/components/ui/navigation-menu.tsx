@@ -1,0 +1,12 @@
+'use client'
+import * as React from 'react'
+import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
+import { ChevronDown } from 'lucide-react'
+import { cn } from '../../lib/utils'
+export function NavigationMenu({className,children,viewport=true,...props}:React.ComponentProps<typeof NavigationMenuPrimitive.Root>&{viewport?:boolean}){return <NavigationMenuPrimitive.Root data-slot='navigation-menu' className={cn('relative flex items-center justify-center',className)} {...props}>{children}{viewport&&<NavigationMenuViewport/>}</NavigationMenuPrimitive.Root>}
+export function NavigationMenuList({className,...props}:React.ComponentProps<typeof NavigationMenuPrimitive.List>){return <NavigationMenuPrimitive.List data-slot='navigation-menu-list' className={cn('flex list-none items-center gap-3',className)} {...props}/>}
+export const NavigationMenuItem=NavigationMenuPrimitive.Item
+export function NavigationMenuLink({className,...props}:React.ComponentProps<typeof NavigationMenuPrimitive.Link>){return <NavigationMenuPrimitive.Link data-slot='navigation-menu-link' className={cn('inline-flex h-10 items-center rounded-lg px-3 text-sm font-medium text-[var(--qb-text-secondary)] outline-none hover:bg-[var(--qb-bg-hover)] hover:text-[var(--qb-action-primary)] focus-visible:ring-2 focus-visible:ring-[var(--qb-focus-ring)]',className)} {...props}/>}
+export function NavigationMenuTrigger({className,children,...props}:React.ComponentProps<typeof NavigationMenuPrimitive.Trigger>){return <NavigationMenuPrimitive.Trigger data-slot='navigation-menu-trigger' className={cn('inline-flex h-10 items-center gap-1 rounded-lg px-3 text-sm font-medium text-[var(--qb-text-secondary)] hover:bg-[var(--qb-bg-hover)]',className)} {...props}>{children}<ChevronDown size={16}/></NavigationMenuPrimitive.Trigger>}
+export function NavigationMenuContent({className,...props}:React.ComponentProps<typeof NavigationMenuPrimitive.Content>){return <NavigationMenuPrimitive.Content data-slot='navigation-menu-content' className={cn('z-40 w-full rounded-xl bg-[var(--qb-bg-elevated)] p-4 text-[var(--qb-text-primary)]',className)} {...props}/>}
+export function NavigationMenuViewport({className,...props}:React.ComponentProps<typeof NavigationMenuPrimitive.Viewport>){return <div className='absolute left-0 top-full flex justify-center'><NavigationMenuPrimitive.Viewport data-slot='navigation-menu-viewport' className={cn('mt-1 min-w-48 rounded-xl border border-[var(--qb-border-default)] bg-[var(--qb-bg-elevated)] shadow-lg',className)} {...props}/></div>}
