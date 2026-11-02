@@ -69,6 +69,8 @@
     "mahjong-skill:git:init": "python scripts/git_init.py",
     "mahjong-skill:git:check": "python scripts/git_init.py --check",
     "mahjong-skill:theme:sync": "python scripts/sync_theme_tokens.py",
-    "mahjong-skill:theme:check": "python scripts/sync_theme_tokens.py --check"
+    "mahjong-skill:theme:check": "python scripts/sync_theme_tokens.py --check",
+    "mahjong-skill:analyze:admin": "pnpm --filter @mahjong-skill/admin analyze:bundle",
+    "mahjong-skill:check:admin:bundle": "pnpm --filter @mahjong-skill/admin check:bundle"
   }
 }

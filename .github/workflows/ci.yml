@@ -54,6 +54,8 @@ jobs:
         run: pnpm --filter @mahjong-skill/client build:weapp
       - name: Admin build
         run: pnpm --filter @mahjong-skill/admin build
+      - name: Enforce Admin chunk size and lazy routes
+        run: pnpm --filter @mahjong-skill/admin check:bundle
       - name: Portal build
         run: pnpm --filter @mahjong-skill/portal build
       - name: Frontend unit tests

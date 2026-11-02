@@ -31,3 +31,13 @@ pnpm --filter @mahjong-skill/admin test
 - `/components`：交互实验室，仅本地示例，不写入真实业务数据。
 
 首次覆盖本轮增量代码后，先从仓库根目录执行 `pnpm install --no-frozen-lockfile`，更新 `pnpm-lock.yaml`，再执行 `pnpm --filter @mahjong-skill/admin build`。迁移详细范围见 [`docs/shadcn-migration.md`](../../docs/shadcn-migration.md)。
+
+## 生产分包与体积报告
+
+```bash
+pnpm --filter @mahjong-skill/admin build
+pnpm --filter @mahjong-skill/admin analyze:bundle
+pnpm --filter @mahjong-skill/admin check:bundle
+```
+
+管理端使用路由级 `React.lazy`、Vite 8/Rolldown 的 `codeSplitting.groups`，并通过 manifest 检查最大单文件（500 kB）与是否真正按路由加载。详细方案：[`docs/admin-code-splitting.md`](../../docs/admin-code-splitting.md)。

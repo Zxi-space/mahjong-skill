@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "typecheck": "tsc -b --pretty false",
     "preview": "vite preview --port 4173",
-    "test": "vitest run"
+    "test": "vitest run",
+    "analyze:bundle": "node scripts/analyze-bundle.mjs",
+    "check:bundle": "node scripts/analyze-bundle.mjs --strict"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.0",
